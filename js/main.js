@@ -27,7 +27,7 @@ function initializeNavigation() {
 
 // Set active navigation link
 function setActiveNavLink() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPage = globalThis.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-links a');
 
     navLinks.forEach(link => {
@@ -214,3 +214,52 @@ document.querySelectorAll('.dropdown-btn').forEach(btn => {
         }
     });
 });
+
+// ── Hero Enhancement: sonar rings + wave + page-hero label ──
+function enhanceHero() {
+    const hero = document.querySelector('.hero');
+    if (!hero) return;
+
+    const pageTags = {
+        'domain.html':        'Research Domain',
+        'milestones.html':    'Project Timeline',
+        'documents.html':     'Project Resources',
+        'contact.html':       'Contact Us',
+        'about.html':         'Our Team',
+        'presentations.html': 'Presentations'
+    };
+
+    const currentPage = globalThis.location.pathname.split('/').pop() || 'index.html';
+
+    // Apply inner-page variant
+    if (pageTags[currentPage]) {
+        hero.classList.add('page-hero');
+        const heroContent = hero.querySelector('.hero-content');
+        if (heroContent) {
+            const tag = document.createElement('span');
+            tag.className = 'hero-tag';
+            tag.textContent = pageTags[currentPage];
+            heroContent.insertBefore(tag, heroContent.firstChild);
+        }
+    }
+
+    // Inject sonar pulse rings
+    const rings = document.createElement('div');
+    rings.className = 'hero-rings';
+    for (let i = 0; i < 3; i++) {
+        const ring = document.createElement('span');
+        ring.className = 'hero-ring';
+        rings.appendChild(ring);
+    }
+    hero.appendChild(rings);
+
+    // Inject bottom wave (colour matches next section)
+    const nextSection = hero.nextElementSibling;
+    const waveFill = nextSection?.classList.contains('alternate')
+        ? '#e2ecf3'
+        : '#ffffff';
+    const wave = document.createElement('div');
+    wave.className = 'hero-wave';
+    wave.innerHTML = `<svg viewBox="0 0 1440 52" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,36 C240,8 480,52 720,28 C960,4 1200,48 1440,32 L1440,52 L0,52 Z" fill="${waveFill}"/></svg>`;
+    hero.appendChild(wave);
+}
