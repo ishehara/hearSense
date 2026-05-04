@@ -525,8 +525,8 @@ section.alternate {
 }
 
 .team-member-avatar {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: 50%;
     margin: 0 auto 15px;
@@ -536,6 +536,8 @@ section.alternate {
     font-size: 3rem;
     color: white;
     overflow: hidden;
+    border: 3px solid var(--border-color);
+    box-shadow: 0 4px 14px rgba(21, 119, 160, 0.18);
 }
 
 .team-member-avatar img {
