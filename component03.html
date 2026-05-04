@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component 03 - Sign Language Reader | HearSense</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class="logo">HearSense</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="domain.html">Domain</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="presentations.html">Presentations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="component-hero component-hero-03">
+        <div class="hero-content">
+            <div class="component-badge">Component 03</div>
+            <h1>📝 Sign Language Reader</h1>
+            <p>An advanced computer vision system that watches a person signing in real time and converts Sinhala Sign Language gestures into text — using hands, face, and body together</p>
+            <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+        </div>
+    </section>
+
+    <!-- What This Component Does -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">What Does This Component Do?</h2>
+            <p class="section-subtitle">Real-time Sinhala Sign Language recognition through a standard camera</p>
+            <div class="component-intro-card">
+                <p>
+                    This component allows a computer or mobile device to watch a person performing Sinhala Sign Language through a camera and understand what sign they are making — in real time.
+                </p>
+                <p>
+                    When a deaf or hearing-impaired person signs in front of the camera, the system watches their hand gestures, facial expressions, and body posture all at the same time, figures out which Sinhala word or phrase is being signed, and displays the meaning on the screen. It does not require any special hardware — just a regular camera.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Exists -->
+    <section class="alternate">
+        <div class="container">
+            <h2 class="section-title">Why Does It Exist?</h2>
+            <p class="section-subtitle">Breaking the communication barrier between deaf and hearing communities</p>
+            <div class="cards-grid">
+                <div class="card problem-card">
+                    <h3>🚧 The Communication Barrier</h3>
+                    <p>Deaf and hearing-impaired people in Sri Lanka use Sinhala Sign Language to communicate. However, most people around them — including family members, teachers, doctors, and strangers — do not know sign language.</p>
+                    <p style="margin-top: 10px;">This creates a communication barrier in everyday life where even simple interactions become a challenge.</p>
+                </div>
+                <div class="card solution-card">
+                    <h3>🌉 Breaking the Barrier</h3>
+                    <p>This component acts as an automatic interpreter that can read sign language and turn it into text, so that anyone with a phone or computer can understand what a deaf person is trying to say — without needing to learn sign language themselves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hands Alone Are Not Enough -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Why Hands Alone Are Not Enough</h2>
+            <p class="section-subtitle">True sign language comprehension requires reading the whole body</p>
+            <div class="component-intro-card" style="border-left-color: #d9692a;">
+                <p>
+                    Most existing sign language recognition systems only look at hand gestures. However, in real sign language, meaning is carried not just by the hands but also by the face and the body. A signer's facial expression can completely change the meaning of a sign — for example, the same hand movement can mean a question or a statement depending on the eyebrow and mouth position.
+                </p>
+                <p>
+                    Similarly, body posture and shoulder movement add important context that hand gestures alone cannot convey. By reading all three signals together — hand gestures, facial expressions, and body posture — this component produces significantly more accurate results than systems that rely on hands only. This mirrors how a real, experienced interpreter reads sign language.
+                </p>
+            </div>
+            <div class="three-signal-grid">
+                <div class="signal-card">
+                    <div class="signal-icon">🤲</div>
+                    <h4>Hand Gestures</h4>
+                    <p>Shape, position, and movement of both hands tracked in real time</p>
+                </div>
+                <div class="signal-card">
+                    <div class="signal-icon">😊</div>
+                    <h4>Facial Expressions</h4>
+                    <p>Eye movement, eyebrow position, mouth shape, and emotional cues</p>
+                </div>
+                <div class="signal-card">
+                    <div class="signal-icon">🧍</div>
+                    <h4>Body Posture</h4>
+                    <p>Position and movement of shoulders and upper body for context</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="alternate">
+        <div class="container">
+            <h2 class="section-title">How Does It Work?</h2>
+            <p class="section-subtitle">Six steps from camera input to Sinhala text output</p>
+            <div class="how-it-works-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4>Camera Watches</h4>
+                    <p>The camera watches the person signing live, capturing continuous video input.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4>Three Signals Tracked</h4>
+                    <p>Simultaneously tracks hand gestures, facial expressions, and body posture in parallel.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4>Motion Over Time</h4>
+                    <p>Looks at how all three signals change together over time — not a single image, but the full motion of the sign from start to finish.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h4>Unified Understanding</h4>
+                    <p>Combines information from hands, face, and body into a single unified interpretation of the sign being performed.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h4>Pattern Matching</h4>
+                    <p>Compares what it sees to hundreds of Sinhala signs it has already learned and picks the closest match.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <h4>Text Displayed</h4>
+                    <p>The recognised sign is shown on screen as Sinhala text, along with the system's confidence level. All in real time with no delay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What It Can Recognise -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">What Can It Recognise?</h2>
+            <p class="section-subtitle">383 Sinhala signs covering broad everyday conversational vocabulary</p>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>👋 Greetings & Social</h3>
+                    <ul>
+                        <li>Common greetings (hello, goodbye, thank you)</li>
+                        <li>Polite expressions and courtesies</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>👨‍👩‍👧 People & Relationships</h3>
+                    <ul>
+                        <li>Mother, father, friend, teacher</li>
+                        <li>Family members and social roles</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🔢 Numbers & Time</h3>
+                    <ul>
+                        <li>Numbers and days of the week</li>
+                        <li>Months of the year</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🎨 Descriptive Words</h3>
+                    <ul>
+                        <li>Colours, places, and objects</li>
+                        <li>Adjectives and descriptive vocabulary</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🏃 Actions & Verbs</h3>
+                    <ul>
+                        <li>Eat, walk, go, come, help</li>
+                        <li>Common daily action words</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>📊 Coverage</h3>
+                    <div class="stat-highlight">383</div>
+                    <p>different Sinhala signs — a broad range of conversational needs for daily life communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Benefits -->
+    <section class="alternate">
+        <div class="container">
+            <h2 class="section-title">Who Benefits From This?</h2>
+            <p class="section-subtitle">A wide range of individuals and institutions gain from this component</p>
+            <div class="benefit-grid">
+                <div class="card benefit-card">
+                    <div class="benefit-icon">👂</div>
+                    <h3>Deaf & Hearing-Impaired Individuals</h3>
+                    <p>Can communicate with people who do not know sign language, without needing a human interpreter present.</p>
+                </div>
+                <div class="card benefit-card">
+                    <div class="benefit-icon">👥</div>
+                    <h3>Hearing People</h3>
+                    <p>Friends, family, shopkeepers, healthcare workers, and teachers can understand what a deaf person is signing — even without learning sign language.</p>
+                </div>
+                <div class="card benefit-card">
+                    <div class="benefit-icon">🏫</div>
+                    <h3>Schools & Education</h3>
+                    <p>Teachers can better support deaf students in mainstream classrooms without requiring full sign language training.</p>
+                </div>
+                <div class="card benefit-card">
+                    <div class="benefit-icon">🏥</div>
+                    <h3>Healthcare Settings</h3>
+                    <p>Doctors and nurses can communicate more effectively with deaf patients in situations where a trained interpreter is not available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where It Is Used -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Where Is It Used?</h2>
+            <p class="section-subtitle">Designed for real everyday situations, not just laboratory environments</p>
+            <div class="component-intro-card">
+                <p>
+                    This component runs as part of a mobile application. A person holds up their phone, the camera sees the signing, and the app shows the recognised word or phrase on screen. It is designed to work in real everyday situations — in homes, schools, hospitals, shops, and public spaces.
+                </p>
+                <p>
+                    No special hardware is required — just a standard smartphone camera. The system processes everything on-device in real time, meaning no internet connection is needed and results appear within moments of the sign being performed.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overall Purpose -->
+    <section style="background: linear-gradient(160deg, #142433 0%, #1577a0 60%, #1b7a5f 100%); color: white; text-align: center;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Overall Purpose</h2>
+            <p style="color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.8;">
+                The Sign Language Reader breaks down the most fundamental communication barrier between deaf and hearing communities. By reading hands, face, and body together — mirroring how a real interpreter works — it achieves far superior accuracy and enables natural, real-time communication without any intermediary.
+            </p>
+            <div class="purpose-badges">
+                <span class="purpose-badge">Reads hands, face & body simultaneously</span>
+                <span class="purpose-badge">383 Sinhala signs recognized</span>
+                <span class="purpose-badge">Real-time text output</span>
+                <span class="purpose-badge">No special hardware needed</span>
+                <span class="purpose-badge">Works in everyday situations</span>
+            </div>
+            <div style="margin-top: 40px;">
+                <a href="component02.html" class="btn btn-secondary">← Sound Alert System</a>
+                <a href="index.html" class="btn btn-secondary">Home</a>
+                <a href="component04.html" class="btn btn-primary" style="background: white; color: #1577a0;">Next: Two-Way Communication →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Intelligent Sinhala Sign Language Communication Platform. All rights reserved.</p>
+            <p>Developed with ❤️ for accessibility and inclusion</p>
+            <p>
+                <a href="contact.html">Contact</a> |
+                <a href="about.html">About</a> |
+                <a href="domain.html">Research</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
